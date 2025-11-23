@@ -4,10 +4,11 @@ This project demonstrates a fully automated, idempotent approach to deploying a 
 
 The goal is to move an EC2 instance from its initial, raw state to a fully configured Nginx web server, serving a custom, styled landing page—all executed via a single command from an Ansible Control Node.
 
-**Architected and Coded by: Hritik Raj**
+**Architected and Coded **
 
-<img width="1024" height="1024" alt="Gemini_Generated_Image_20v8ba20v8ba20v8" src="https://github.com/user-attachments/assets/f31f2eda-e542-48ed-879d-6eb6369ac50a" />
-
+## 🎯 Install Ansible AMI LINUX 2023
+* **sudo dnf install python3-pip:**
+*  **pip install ansible** 
 
 ## 🎯 Project Goals
 
@@ -117,11 +118,6 @@ The playbook is simple, ensuring dependency installation and content deployment 
 ![deployment](https://github.com/user-attachments/assets/379bc18f-baf2-4a6f-9d00-76a136f7f25d)
 
 
-
-## Result
-
-
-![result](https://github.com/user-attachments/assets/ec56585f-cd09-4e5c-af74-464bb8506f6b)
 
 
 ## 🌟 Key Takeaways
