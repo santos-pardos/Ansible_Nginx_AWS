@@ -21,7 +21,7 @@
 
     - name: Deploy custom index.html file
       copy:
-        src: /home/ubuntu/site/index.html
+        src: /home/ubuntu/Ansible_Nginx_AWS/site/index.html
         dest: /var/www/html/index.html
         owner: www-data
         group: www-data
