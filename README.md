@@ -6,11 +6,13 @@ The goal is to move an EC2 instance from its initial, raw state to a fully confi
 
 **Architected and Coded **
 
-## 🎯 Install Ansible AMI LINUX 2023
-* **sudo dnf install python3-pip:**
-*  **pip install ansible** 
+## Install Ansible AMI LINUX 2023
+``´bash
+sudo dnf install python3-pip
+pip install ansible
+´
 
-## 🎯 Project Goals
+##  Project Goals
 
 * **Implement IaC:** Define infrastructure configuration in code (`setup_nginx.yml`).
 
@@ -20,7 +22,7 @@ The goal is to move an EC2 instance from its initial, raw state to a fully confi
 
 * **Deliver Modern UI:** Deploy a custom, professionally styled HTML landing page (dark mode, gamified success message).
 
-## 🏛️ Architecture Overview
+##  Architecture Overview
 
 The system consists of two primary components running on AWS EC2 instances:
 
@@ -29,7 +31,7 @@ The system consists of two primary components running on AWS EC2 instances:
 | **Ansible Control Node** | Orchestrator | Stores the playbook (`setup_nginx.yml`) and inventory (`inventory.ini`). Executes the `ansible-playbook` command. |
 | **Web Server (Target)** | Managed Node | The EC2 instance where Ansible connects via SSH to install and configure **Nginx** and deploy the web content. |
 
-## 🛠️ Prerequisites
+##  Prerequisites
 
 Before running the playbook, ensure you have the following in place:
 
@@ -45,7 +47,7 @@ Before running the playbook, ensure you have the following in place:
 
 4. **Ansible:** Must be installed on the Control Node.
 
-## ⚙️ Configuration & Usage
+##  Configuration & Usage
 
 ### 1. Configure the Inventory
 
@@ -105,7 +107,7 @@ http://\<YOUR\_EC2\_PUBLIC\_IP\>
 
 You should see the custom, gamified "Deployment Success!" landing page.
 
-## 📝 The Ansible Playbook (`setup_nginx.yml`)
+##  The Ansible Playbook (`setup_nginx.yml`)
 
 The playbook is simple, ensuring dependency installation and content deployment in three steps:
 
@@ -120,7 +122,7 @@ The playbook is simple, ensuring dependency installation and content deployment 
 
 
 
-## 🌟 Key Takeaways
+##  Key Takeaways
 
 * **Idempotency:** The playbook ensures Nginx is *present* and *started*, preventing unnecessary actions if the server is already configured.
 
