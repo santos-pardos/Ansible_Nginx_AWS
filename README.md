@@ -10,7 +10,7 @@ The goal is to move an EC2 instance from its initial, raw state to a fully confi
 ``´bash
 sudo dnf install python3-pip
 pip install ansible
-´
+``´
 
 ##  Project Goals
 
