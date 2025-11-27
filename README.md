@@ -8,8 +8,9 @@ The goal is to move an EC2 instance from its initial, raw state to a fully confi
 
 ## Install Ansible AMI LINUX 2023
 ```
-sudo dnf install python3-pip
+sudo dnf install python3-pip -y
 pip install ansible
+sudo dnf install git -y
 ```
 
 ##  Project Goals
