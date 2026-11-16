@@ -78,7 +78,7 @@ Organize the project files on the Ansible Control Node as follows:
 
 .
 ├── inventory.ini
-├── setup\_nginx.yml
+├── setup_nginx.yml
 └── site/
 └── index.html         \# Custom styled landing page
 
@@ -92,7 +92,7 @@ From the root directory of the **Ansible Control Node**, execute the playbook:
 
 # This command runs the automation against the hosts defined in inventory.ini
 
-ansible-playbook -i inventory.ini setup\_nginx.yml
+ansible-playbook -i inventory.ini setup_nginx.yml
 
 ```
 
